@@ -26,6 +26,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'homepage',
+    'category',
+    'video',
+    'news',
 ]
 
 MIDDLEWARE = [
@@ -62,28 +65,23 @@ WSGI_APPLICATION = 'viral_mathura.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'viral_mathura',
-        'USER': 'root',
-        'PASSWORD': 'Hello12345678#$@',
-        'HOST': 'localhost',
-        'PORT': '3306',
-    }
-}
-
-
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
 #         'NAME': 'viral_mathura',
-#         'USER': 'sanjay',
+#         'USER': 'root',
 #         'PASSWORD': 'Hello12345678#$@',
 #         'HOST': '145.223.18.243',
 #         'PORT': '3306',
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'mbdb/db.sqlite3',
+    }
+}
 
 
 # Password validation
@@ -110,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/kolkata'
 
 USE_I18N = True
 
