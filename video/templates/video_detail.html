@@ -27,7 +27,8 @@ Video | Detail Page
         <div class="row">
             <div class="col-12">
                 <div class="single-video-area">
-                    <video controls controlsList="nodownload" height="540px" id="video_frame" src="{{news.video_file.url}}"
+                    <video controls controlsList="nodownload" height="540px" id="video_frame"
+                           src="{{news.video_file.url}}"
                            type="video/mp4" width="960px"
                            class="img-fluid plyr">
                     </video>
@@ -60,7 +61,11 @@ Video | Detail Page
                         <div class="post-content mt-0">
                             <a href="#" class="post-cata cata-sm cata-danger">{{news.category}}</a>
                             <a href="single-post.html" class="post-title mb-2">{{news.title}}</a>
-
+                            {% if news.featured_image %}
+                            <div class="m-2 text-center mx-auto">
+                                <img src="{{news.featured_image.url}}" alt="" class="img-fluid">
+                            </div>
+                            {% endif %}
                             <div class="d-flex justify-content-between mb-30">
                                 <div class="post-meta d-flex align-items-center">
                                     <a href="#" class="post-author">By Jane</a>
