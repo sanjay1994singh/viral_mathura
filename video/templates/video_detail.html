@@ -26,9 +26,10 @@ Video | Detail Page
         <div class="row">
             <div class="col-12">
                 <div class="single-video-area">
-                    <iframe src="https://www.youtube.com/embed/1nI-GMmHMHs"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                    <video controls controlsList="nodownload" height="540px" id="video_frame" src="{{news.video_file.url}}"
+                           type="video/mp4" width="960px"
+                           class="img-fluid plyr">
+                    </video>
                 </div>
             </div>
         </div>
@@ -525,3 +526,12 @@ Video | Detail Page
 </section>
 <!-- ##### Post Details Area End ##### -->
 {% endblock content %}
+
+{% block js %}
+<script src="https://cdn.jsdelivr.net/npm/plyr@3.6.4/dist/plyr.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const players = Plyr.setup('.plyr');
+    });
+</script>
+{% endblock js %}
