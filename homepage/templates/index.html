@@ -52,7 +52,7 @@
                             <div class="single-post-area mb-80">
                                 <!-- Post Thumbnail -->
                                 <div class="post-thumbnail">
-                                    <img src="/static/img/bg-img/12.jpg" alt="">
+                                    <img src="{{i.featured_image.url}}" alt="">
 
                                     <!-- Video Duration -->
                                     <span class="video-duration">05.03</span>
@@ -60,7 +60,7 @@
 
                                 <!-- Post Content -->
                                 <div class="post-content">
-                                    <a href="#" class="post-cata cata-sm cata-danger">Game</a>
+                                    <a href="#" class="post-cata cata-sm cata-danger">{{i.category}}</a>
                                     <a href="news/news-detail/{{i.id}}/" class="post-title">{{i.title}}</a>
                                     <div class="post-meta d-flex">
                                         <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 28</a>
