@@ -17,6 +17,17 @@ Video | Detail Page
 {% endblock mestas %}
 
 {% block css %}
+<style>
+    .share-links {
+        margin: 10px 0;
+    }
+    .share-links a {
+        text-decoration: none;
+        margin-right: 10px;
+        font-size: 24px;
+        color: #000;
+    }
+</style>
 {% endblock css %}
 
 {% block content %}
@@ -28,18 +39,26 @@ Video | Detail Page
             <div class="col-12 col-lg-8">
                 <div class="post-details-content d-flex">
                     <!-- Post Share Info -->
-                    <div class="post-share-info">
-                        <p>Share</p>
-                        <a class="bg-success"
-                           href="https://wa.me/?text={{ news.title }} - {{ request.build_absolute_uri }}"
-                           target="_blank"><i class="fa fa-whatsapp"></i></a>
-
-                        <a class="facebook"
-                           href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute_uri }}"
-                           target="_blank"><i class="fa fa-facebook"></i></a>
+                    <!-- WhatsApp Share Link -->
+                    <div class="share-links">
+                        <span style="margin-right: 10px;">Share Link</span>
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/?text={{ news.title }} - {{ request.build_absolute_uri }}"
+                           target="_blank">
+                            <i class="fa fa-whatsapp" style="color:#25D366; margin-right: 10px;"></i>
+                        </a>
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute_uri }}"
+                           target="_blank">
+                            <i class="fa fa-facebook" style="color:#3b5998; margin-right: 10px;"></i>
+                        </a>
+                        <!-- Twitter -->
+                        <a href="https://twitter.com/intent/tweet?url={{ request.build_absolute_uri }}&text={{ news.title }}"
+                           target="_blank">
+                            <i class="fa fa-twitter" style="color:#1DA1F2; margin-right: 10px;"></i>
+                        </a>
 
                     </div>
-
                     <!-- Blog Content -->
                     <div class="blog-content">
 

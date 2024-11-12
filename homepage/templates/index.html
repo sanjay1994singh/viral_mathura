@@ -31,7 +31,7 @@
                             <!-- Post Content -->
                             <div class="post-content">
                                 <a href="#" class="post-cata">{{i.category}}</a>
-                                <a href="single-post.html" class="post-title">{{i.title}}</a>
+                                <a href="/video/video-detail/{{i.id}}/" class="post-title">{{i.title}}</a>
                                 <div class="post-meta d-flex">
                                     <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a>
                                     <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
@@ -46,6 +46,7 @@
                     </div>
 
                     <div class="row">
+                        {% for i in news %}
                         <!-- Single Blog Post -->
                         <div class="col-12 col-md-6">
                             <div class="single-post-area mb-80">
@@ -60,8 +61,7 @@
                                 <!-- Post Content -->
                                 <div class="post-content">
                                     <a href="#" class="post-cata cata-sm cata-danger">Game</a>
-                                    <a href="single-post.html" class="post-title">Searching for the 'angel' who held me
-                                        on Westminste Bridge</a>
+                                    <a href="news/news-detail/{{i.id}}/" class="post-title">{{i.title}}</a>
                                     <div class="post-meta d-flex">
                                         <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 28</a>
                                         <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 17</a>
@@ -70,31 +70,32 @@
                                 </div>
                             </div>
                         </div>
+                        {% endfor %}
 
-                        <!-- Single Blog Post -->
-                        <div class="col-12 col-md-6">
-                            <div class="single-post-area mb-80">
-                                <!-- Post Thumbnail -->
-                                <div class="post-thumbnail">
-                                    <img src="/static/img/bg-img/13.jpg" alt="">
+<!--                        &lt;!&ndash; Single Blog Post &ndash;&gt;-->
+<!--                        <div class="col-12 col-md-6">-->
+<!--                            <div class="single-post-area mb-80">-->
+<!--                                &lt;!&ndash; Post Thumbnail &ndash;&gt;-->
+<!--                                <div class="post-thumbnail">-->
+<!--                                    <img src="/static/img/bg-img/13.jpg" alt="">-->
 
-                                    <!-- Video Duration -->
-                                    <span class="video-duration">05.03</span>
-                                </div>
+<!--                                    &lt;!&ndash; Video Duration &ndash;&gt;-->
+<!--                                    <span class="video-duration">05.03</span>-->
+<!--                                </div>-->
 
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <a href="#" class="post-cata cata-sm cata-primary">Business</a>
-                                    <a href="single-post.html" class="post-title">Love Island star's boyfriend found
-                                        dead after her funeral</a>
-                                    <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+<!--                                &lt;!&ndash; Post Content &ndash;&gt;-->
+<!--                                <div class="post-content">-->
+<!--                                    <a href="#" class="post-cata cata-sm cata-primary">Business</a>-->
+<!--                                    <a href="single-post.html" class="post-title">Love Island star's boyfriend found-->
+<!--                                        dead after her funeral</a>-->
+<!--                                    <div class="post-meta d-flex">-->
+<!--                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>-->
+<!--                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>-->
+<!--                                        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
                     </div>
 
                     <div class="row">
