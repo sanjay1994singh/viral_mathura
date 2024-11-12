@@ -40,34 +40,13 @@ Video | Detail Page
             <!-- Post Details Content Area -->
             <div class="col-12 col-lg-8">
                 <div class="post-details-content d-flex">
-<!--                    &lt;!&ndash; Post Share Info &ndash;&gt;-->
-<!--                    &lt;!&ndash; WhatsApp Share Link &ndash;&gt;-->
-<!--                    <div class="share-links">-->
-<!--                        <span style="margin-right: 10px;">Share Link</span>-->
-<!--                        &lt;!&ndash; WhatsApp &ndash;&gt;-->
-<!--                        <a href="https://wa.me/?text={{ news.title }} - {{ request.build_absolute_uri }}"-->
-<!--                           target="_blank">-->
-<!--                            <i class="fa fa-whatsapp" style="color:#25D366; margin-right: 10px;"></i>-->
-<!--                        </a>-->
-<!--                        &lt;!&ndash; Facebook &ndash;&gt;-->
-<!--                        <a href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute_uri }}"-->
-<!--                           target="_blank">-->
-<!--                            <i class="fa fa-facebook" style="color:#3b5998; margin-right: 10px;"></i>-->
-<!--                        </a>-->
-<!--                        &lt;!&ndash; Twitter &ndash;&gt;-->
-<!--                        <a href="https://twitter.com/intent/tweet?url={{ request.build_absolute_uri }}&text={{ news.title }}"-->
-<!--                           target="_blank">-->
-<!--                            <i class="fa fa-twitter" style="color:#1DA1F2; margin-right: 10px;"></i>-->
-<!--                        </a>-->
-
-<!--                    </div>-->
                     <!-- Blog Content -->
                     <div class="blog-content">
 
                         <!-- Post Content -->
                         <div class="post-content mt-0">
                             <a href="#" class="post-cata cata-sm cata-danger">{{news.category}}</a>
-                            <a href="single-post.html" class="post-title mb-2">{{news.title}}</a>
+                            <a href="#" class="post-title mb-2">{{news.title}}</a>
                             {% if news.featured_image %}
                             <div class="m-2 text-center mx-auto">
                                 <img src="{{news.featured_image.url}}" alt="" class="img-fluid">
@@ -87,24 +66,24 @@ Video | Detail Page
                             </div>
                         </div>
                         <div class="share-links">
-                        <span style="margin-right: 10px;">Share Link</span>
-                        <!-- WhatsApp -->
-                        <a href="https://wa.me/?text={{ news.title }} - {{ request.build_absolute_uri }}"
-                           target="_blank">
-                            <i class="fa fa-whatsapp" style="color:#25D366; margin-right: 10px;"></i>
-                        </a>
-                        <!-- Facebook -->
-                        <a href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute_uri }}"
-                           target="_blank">
-                            <i class="fa fa-facebook" style="color:#3b5998; margin-right: 10px;"></i>
-                        </a>
-                        <!-- Twitter -->
-                        <a href="https://twitter.com/intent/tweet?url={{ request.build_absolute_uri }}&text={{ news.title }}"
-                           target="_blank">
-                            <i class="fa fa-twitter" style="color:#1DA1F2; margin-right: 10px;"></i>
-                        </a>
+                            <span style="margin-right: 10px;">Share Link</span>
+                            <!-- WhatsApp -->
+                            <a href="https://wa.me/?text={{ news.title }} - {{ request.build_absolute_uri }}"
+                               target="_blank">
+                                <i class="fa fa-whatsapp" style="color:#25D366; margin-right: 10px;"></i>
+                            </a>
+                            <!-- Facebook -->
+                            <a href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute_uri }}"
+                               target="_blank">
+                                <i class="fa fa-facebook" style="color:#3b5998; margin-right: 10px;"></i>
+                            </a>
+                            <!-- Twitter -->
+                            <a href="https://twitter.com/intent/tweet?url={{ request.build_absolute_uri }}&text={{ news.title }}"
+                               target="_blank">
+                                <i class="fa fa-twitter" style="color:#1DA1F2; margin-right: 10px;"></i>
+                            </a>
 
-                    </div>
+                        </div>
                         <p>{{news.text}}</p>
 
                         <!-- Related Post Area -->
