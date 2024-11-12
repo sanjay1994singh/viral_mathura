@@ -1,9 +1,7 @@
 {% extends 'base.html' %}
-{% block title %}
-Video | Detail Page
-{% endblock title %}
 
-{% block mestas %}
+
+{% block metatags %}
 <meta property="og:title" content="{{news.title}}">
 <meta property="og:description" content="{{ news.text|truncatewords:30 }}">
 <meta property="og:image" content="{{ absolute_image_url }}">
@@ -14,7 +12,11 @@ Video | Detail Page
 <meta name="twitter:title" content="{{ news.title }}">
 <meta name="twitter:image" content="{{ news.featured_image.url }}">
 
-{% endblock mestas %}
+{% endblock metatags %}
+
+{% block title %}
+Video | Detail Page
+{% endblock title %}
 
 {% block css %}
 <style>
